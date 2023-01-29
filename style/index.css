@@ -1,0 +1,83 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    background-color:rgb(43, 40, 40);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* GALERIA */
+.portafolio{
+    background: rgb(43, 40, 40);;
+}
+
+.galeria-port{
+    display: flex;
+    
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+
+    color: aliceblue;
+}
+
+.imagen-port{
+    /*padding: 20px;*/
+    margin: 10px;
+
+/*
+    left: 100%;
+    float: left;
+*/
+    width: 24%;
+    min-width: 24%;
+    margin-bottom:60px;
+
+    max-height: 20%;
+    min-height: 20%;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.textos > p{
+    font-size:25px;
+}
+
+.imagen-port > img{
+    
+    width: 100%;
+    height: 100%;
+    /*object-fit: conver;*/
+    /*display: block;*/
+}
+
+.hover-galeria{
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: rgba(102, 101, 44, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color:antiquewhite;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
